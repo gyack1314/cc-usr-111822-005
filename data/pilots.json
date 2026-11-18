@@ -1,0 +1,416 @@
+{
+  "known_at": "2026-11-10T00:00:00+08:00",
+  "previous_known_at": "2026-10-08T00:00:00+08:00",
+  "documents": [
+    {
+      "kind": "team",
+      "id": "sales",
+      "revision": "r1",
+      "received_at": "2026-06-30T09:00:00+08:00",
+      "payload": {
+        "name": "销售部",
+        "cost_center": "CC-100",
+        "loaded_hourly_cost": 120,
+        "monthly_hours_per_user": 120
+      }
+    },
+    {
+      "kind": "team",
+      "id": "support",
+      "revision": "r1",
+      "received_at": "2026-06-30T09:00:00+08:00",
+      "payload": {
+        "name": "客服部",
+        "cost_center": "CC-200",
+        "loaded_hourly_cost": 100,
+        "monthly_hours_per_user": 120
+      }
+    },
+    {
+      "kind": "team",
+      "id": "ops",
+      "revision": "r1",
+      "received_at": "2026-06-30T09:00:00+08:00",
+      "payload": {
+        "name": "运营部",
+        "cost_center": "CC-300",
+        "loaded_hourly_cost": 110,
+        "monthly_hours_per_user": 120
+      }
+    },
+    {
+      "kind": "pilot",
+      "id": "P1",
+      "revision": "r1",
+      "received_at": "2026-08-25T09:00:00+08:00",
+      "payload": {
+        "team": "sales",
+        "assistant": "销冠助手",
+        "baseline_periods": ["2026-07", "2026-08"],
+        "pilot_periods": ["2026-09", "2026-10"]
+      }
+    },
+    {
+      "kind": "pilot",
+      "id": "P2",
+      "revision": "r1",
+      "received_at": "2026-08-25T09:00:00+08:00",
+      "payload": {
+        "team": "support",
+        "assistant": "客服助手",
+        "baseline_periods": ["2026-07", "2026-08"],
+        "pilot_periods": ["2026-09", "2026-10"]
+      }
+    },
+    {
+      "kind": "pilot",
+      "id": "P3",
+      "revision": "r1",
+      "received_at": "2026-08-25T09:00:00+08:00",
+      "payload": {
+        "team": "ops",
+        "assistant": "报表助手",
+        "baseline_periods": ["2026-07", "2026-08"],
+        "pilot_periods": ["2026-09", "2026-10"]
+      }
+    },
+    {
+      "kind": "price_change",
+      "id": "PC1",
+      "revision": "r1",
+      "received_at": "2026-08-28T09:00:00+08:00",
+      "payload": {
+        "scope": "all",
+        "effective": "2026-09",
+        "factor": 1.1,
+        "note": "全线调价 +10%"
+      }
+    },
+    {
+      "kind": "staff_change",
+      "id": "SC1",
+      "revision": "r1",
+      "received_at": "2026-09-28T09:00:00+08:00",
+      "payload": {
+        "team": "sales",
+        "effective": "2026-10",
+        "headcount_delta": -1,
+        "note": "编制调整"
+      }
+    },
+    {
+      "kind": "coverage",
+      "id": "CV-S-07",
+      "revision": "r1",
+      "received_at": "2026-08-03T09:00:00+08:00",
+      "payload": {"team": "sales", "period": "2026-07", "eligible_users": 20}
+    },
+    {
+      "kind": "coverage",
+      "id": "CV-S-08",
+      "revision": "r1",
+      "received_at": "2026-09-03T09:00:00+08:00",
+      "payload": {"team": "sales", "period": "2026-08", "eligible_users": 20}
+    },
+    {
+      "kind": "coverage",
+      "id": "CV-S-09",
+      "revision": "r1",
+      "received_at": "2026-10-05T09:00:00+08:00",
+      "payload": {"team": "sales", "period": "2026-09", "eligible_users": 20}
+    },
+    {
+      "kind": "coverage",
+      "id": "CV-S-10",
+      "revision": "r1",
+      "received_at": "2026-11-03T09:00:00+08:00",
+      "payload": {"team": "sales", "period": "2026-10", "eligible_users": 19}
+    },
+    {
+      "kind": "coverage",
+      "id": "CV-K-07",
+      "revision": "r1",
+      "received_at": "2026-08-03T09:00:00+08:00",
+      "payload": {"team": "support", "period": "2026-07", "eligible_users": 15}
+    },
+    {
+      "kind": "coverage",
+      "id": "CV-K-08",
+      "revision": "r1",
+      "received_at": "2026-09-03T09:00:00+08:00",
+      "payload": {"team": "support", "period": "2026-08", "eligible_users": 15}
+    },
+    {
+      "kind": "coverage",
+      "id": "CV-K-09",
+      "revision": "r1",
+      "received_at": "2026-10-05T09:00:00+08:00",
+      "payload": {"team": "support", "period": "2026-09", "eligible_users": 15}
+    },
+    {
+      "kind": "coverage",
+      "id": "CV-K-10",
+      "revision": "r1",
+      "received_at": "2026-10-05T09:00:00+08:00",
+      "payload": {"team": "support", "period": "2026-10", "eligible_users": 15}
+    },
+    {
+      "kind": "coverage",
+      "id": "CV-O-09",
+      "revision": "r1",
+      "received_at": "2026-10-05T09:00:00+08:00",
+      "payload": {"team": "ops", "period": "2026-09", "eligible_users": 10}
+    },
+    {
+      "kind": "coverage",
+      "id": "CV-O-10",
+      "revision": "r1",
+      "received_at": "2026-11-03T09:00:00+08:00",
+      "payload": {"team": "ops", "period": "2026-10", "eligible_users": 10}
+    },
+    {
+      "kind": "usage",
+      "id": "U-S-09",
+      "revision": "r1",
+      "received_at": "2026-10-05T09:00:00+08:00",
+      "payload": {"team": "sales", "period": "2026-09", "users": 12, "sessions": 300}
+    },
+    {
+      "kind": "usage",
+      "id": "U-S-10",
+      "revision": "r1",
+      "received_at": "2026-11-03T09:00:00+08:00",
+      "payload": {"team": "sales", "period": "2026-10", "users": 15, "sessions": 410}
+    },
+    {
+      "kind": "usage",
+      "id": "U-K-09",
+      "revision": "r1",
+      "received_at": "2026-10-05T09:00:00+08:00",
+      "payload": {"team": "support", "period": "2026-09", "users": 10, "sessions": 260}
+    },
+    {
+      "kind": "usage",
+      "id": "U-K-10",
+      "revision": "r1",
+      "received_at": "2026-10-05T09:00:00+08:00",
+      "payload": {"team": "support", "period": "2026-10", "users": 11, "sessions": 290}
+    },
+    {
+      "kind": "usage",
+      "id": "U-O-09",
+      "revision": "r1",
+      "received_at": "2026-10-05T09:00:00+08:00",
+      "payload": {"team": "ops", "period": "2026-09", "users": 6, "sessions": 90}
+    },
+    {
+      "kind": "usage",
+      "id": "U-O-10",
+      "revision": "r1",
+      "received_at": "2026-11-03T09:00:00+08:00",
+      "payload": {"team": "ops", "period": "2026-10", "users": 7, "sessions": 105}
+    },
+    {
+      "kind": "hour_report",
+      "id": "H-S-09",
+      "revision": "r1",
+      "received_at": "2026-10-05T09:00:00+08:00",
+      "payload": {"team": "sales", "period": "2026-09", "saved_hours": 240}
+    },
+    {
+      "kind": "hour_report",
+      "id": "H-S-10",
+      "revision": "r1",
+      "received_at": "2026-11-03T09:00:00+08:00",
+      "payload": {"team": "sales", "period": "2026-10", "saved_hours": 300}
+    },
+    {
+      "kind": "hour_report",
+      "id": "H-K-09",
+      "revision": "r1",
+      "received_at": "2026-10-05T09:00:00+08:00",
+      "payload": {"team": "support", "period": "2026-09", "saved_hours": 100}
+    },
+    {
+      "kind": "hour_report",
+      "id": "H-K-10",
+      "revision": "r1",
+      "received_at": "2026-10-05T09:00:00+08:00",
+      "payload": {"team": "support", "period": "2026-10", "saved_hours": 110}
+    },
+    {
+      "kind": "hour_report",
+      "id": "H-O-09",
+      "revision": "r1",
+      "received_at": "2026-10-05T09:00:00+08:00",
+      "payload": {"team": "ops", "period": "2026-09", "saved_hours": 80}
+    },
+    {
+      "kind": "hour_report",
+      "id": "H-O-10",
+      "revision": "r1",
+      "received_at": "2026-11-03T09:00:00+08:00",
+      "payload": {"team": "ops", "period": "2026-10", "saved_hours": 90}
+    },
+    {
+      "kind": "order",
+      "id": "O1",
+      "revision": "r1",
+      "received_at": "2026-08-03T09:00:00+08:00",
+      "payload": {"team": "sales", "period": "2026-07", "amount": 80000}
+    },
+    {
+      "kind": "order",
+      "id": "O2",
+      "revision": "r1",
+      "received_at": "2026-09-03T09:00:00+08:00",
+      "payload": {"team": "sales", "period": "2026-08", "amount": 82000}
+    },
+    {
+      "kind": "order",
+      "id": "O4",
+      "revision": "r1",
+      "received_at": "2026-10-05T09:00:00+08:00",
+      "payload": {"team": "sales", "period": "2026-09", "amount": 95000}
+    },
+    {
+      "kind": "order",
+      "id": "O5",
+      "revision": "r1",
+      "received_at": "2026-11-03T09:00:00+08:00",
+      "payload": {"team": "sales", "period": "2026-10", "amount": 101000}
+    },
+    {
+      "kind": "order",
+      "id": "O6",
+      "revision": "r1",
+      "received_at": "2026-08-03T09:00:00+08:00",
+      "payload": {"team": "support", "period": "2026-07", "amount": 60000}
+    },
+    {
+      "kind": "order",
+      "id": "O7",
+      "revision": "r1",
+      "received_at": "2026-09-03T09:00:00+08:00",
+      "payload": {"team": "support", "period": "2026-08", "amount": 61000}
+    },
+    {
+      "kind": "order",
+      "id": "O8",
+      "revision": "r1",
+      "received_at": "2026-10-05T09:00:00+08:00",
+      "payload": {"team": "support", "period": "2026-09", "amount": 78000}
+    },
+    {
+      "kind": "order",
+      "id": "O9",
+      "revision": "r1",
+      "received_at": "2026-10-05T09:00:00+08:00",
+      "payload": {"team": "support", "period": "2026-10", "amount": 85000}
+    },
+    {
+      "kind": "order",
+      "id": "O9R",
+      "revision": "r1",
+      "received_at": "2026-10-25T09:00:00+08:00",
+      "payload": {"team": "support", "period": "2026-10", "amount": -40000, "reverses": "O9"}
+    },
+    {
+      "kind": "order",
+      "id": "O10",
+      "revision": "r1",
+      "received_at": "2026-10-05T09:00:00+08:00",
+      "payload": {"team": "ops", "period": "2026-09", "amount": 30000}
+    },
+    {
+      "kind": "order",
+      "id": "O11",
+      "revision": "r1",
+      "received_at": "2026-11-03T09:00:00+08:00",
+      "payload": {"team": "ops", "period": "2026-10", "amount": 31000}
+    },
+    {
+      "kind": "cloud_cost",
+      "id": "C-S-09",
+      "revision": "r1",
+      "received_at": "2026-10-05T09:00:00+08:00",
+      "payload": {"team": "sales", "period": "2026-09", "amount": 9000}
+    },
+    {
+      "kind": "cloud_cost",
+      "id": "C-S-10",
+      "revision": "r1",
+      "received_at": "2026-11-02T09:00:00+08:00",
+      "payload": {"team": "sales", "period": "2026-10", "amount": 9500}
+    },
+    {
+      "kind": "cloud_cost",
+      "id": "C-K-09",
+      "revision": "r1",
+      "received_at": "2026-10-05T09:00:00+08:00",
+      "payload": {"team": "support", "period": "2026-09", "amount": 8000}
+    },
+    {
+      "kind": "cloud_cost",
+      "id": "C-K-10",
+      "revision": "r1",
+      "received_at": "2026-10-05T09:00:00+08:00",
+      "payload": {"team": "support", "period": "2026-10", "amount": 8200}
+    },
+    {
+      "kind": "cloud_cost",
+      "id": "C-O-09",
+      "revision": "r1",
+      "received_at": "2026-10-05T09:00:00+08:00",
+      "payload": {"team": "ops", "period": "2026-09", "amount": 3000}
+    },
+    {
+      "kind": "cloud_cost",
+      "id": "C-O-10",
+      "revision": "r1",
+      "received_at": "2026-11-03T09:00:00+08:00",
+      "payload": {"team": "ops", "period": "2026-10", "amount": 3200}
+    },
+    {
+      "kind": "cost_transfer",
+      "id": "CT1",
+      "revision": "r1",
+      "received_at": "2026-11-02T09:00:00+08:00",
+      "payload": {
+        "from_team": "sales",
+        "to_team": "platform",
+        "period": "2026-10",
+        "amount": 2000,
+        "reason": "共享算力池分摊"
+      }
+    },
+    {
+      "kind": "invoice",
+      "id": "I-S-07",
+      "revision": "r1",
+      "received_at": "2026-08-03T09:00:00+08:00",
+      "payload": {"team": "sales", "period": "2026-07", "recognized": 78000}
+    },
+    {
+      "kind": "invoice",
+      "id": "I-S-08",
+      "revision": "r1",
+      "received_at": "2026-09-03T09:00:00+08:00",
+      "payload": {"team": "sales", "period": "2026-08", "recognized": 80000}
+    },
+    {
+      "kind": "invoice",
+      "id": "I-S-09",
+      "revision": "r1",
+      "received_at": "2026-10-05T09:00:00+08:00",
+      "payload": {"team": "sales", "period": "2026-09", "recognized": 93000}
+    },
+    {
+      "kind": "invoice",
+      "id": "I-S-10",
+      "revision": "r1",
+      "received_at": "2026-11-03T09:00:00+08:00",
+      "payload": {"team": "sales", "period": "2026-10", "recognized": 99000}
+    }
+  ]
+}
